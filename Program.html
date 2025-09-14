@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BookVerse — Explore Books</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="CSS/Style.css" />
+</head>
+<body>
+  <!-- Header + Hero -->
+  <header class="site-header gradient-animate">
+    <div class="sparkles" aria-hidden="true"></div>
+    <nav class="container nav">
+      <div class="logo">
+        <span class="mark" aria-hidden="true">📚</span>
+        <span>BookVerse</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#beginners">Famous for Beginners</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero container">
+      <div class="hero-copy">
+        <h1><marquee class="hover-grow" behavior="scroll" direction="left" scrollamount="6">Discover your next favorite book</marquee></h1>
+        <p>Browse Fiction, Comics, Mystery, Fantasy, Sci‑Fi, and more — smooth animations, tasteful colors, and clean typography.</p>
+        <a class="btn primary" href="#categories">
+          <span class="dot" aria-hidden="true"></span> Explore Categories
+        </a>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="floating-book" style="--r:-6deg"></div>
+        <div class="floating-book" style="--r:8deg"></div>
+        <div class="floating-book" style="--r:-14deg"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cheerful Images -->
+  <section id="cheerful-images">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2><marquee class="hover-grow" behavior="alternate" direction="left" scrollamount="5">Happy Reading Moments</marquee></h2>
+          <p>Bright, cheerful vibes to celebrate books and imagination.</p>
+        </div>
+      </div>
+
+      <div class="grid cheerful-grid">
+        <article class="card fiction">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Smiling person reading a book in sunlight" />
+          <h3>Joy of Reading</h3>
+          <p>Sunlit pages and happy faces.</p>
+        </article>
+
+        <article class="card fantasy">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop" alt="Colorful stack of books with playful vibes" />
+          <h3>Colorful Stacks</h3>
+          <p>Cheerful colors spark excitement.</p>
+        </article>
+
+        <article class="card children">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop" alt="Kids enjoying picture books together" />
+          <h3>Sharing Stories</h3>
+          <p>Smiles grow when stories are shared.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2><marquee class="hover-grow" behavior="alternate" direction="left" scrollamount="5">Book Categories</marquee></h2>
+          <p>Use the filters to view specific types of books.</p>
+        </div>
+      </div>
+
+      <!-- CSS-only filters -->
+      <div class="filters" role="tablist" aria-label="Category Filters">
+        <!-- Radios -->
+        <input type="radio" name="cat" id="cat-all" checked />
+        <label for="cat-all" role="tab" aria-selected="true">All</label>
+
+        <input type="radio" name="cat" id="cat-fiction" />
+        <label for="cat-fiction" role="tab">Fiction</label>
+
+        <input type="radio" name="cat" id="cat-comics" />
+        <label for="cat-comics" role="tab">Comics</label>
+
+        <input type="radio" name="cat" id="cat-mystery" />
+        <label for="cat-mystery" role="tab">Mystery</label>
+
+        <input type="radio" name="cat" id="cat-fantasy" />
+        <label for="cat-fantasy" role="tab">Fantasy</label>
+
+        <input type="radio" name="cat" id="cat-scifi" />
+        <label for="cat-scifi" role="tab">Sci‑Fi</label>
+
+        <input type="radio" name="cat" id="cat-nonfiction" />
+        <label for="cat-nonfiction" role="tab">Non‑Fiction</label>
+
+        <input type="radio" name="cat" id="cat-children" />
+        <label for="cat-children" role="tab">Children</label>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid">
+        <!-- Each card can belong to multiple categories using multiple classes -->
+        <article class="card fiction">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+              <path d="M6 4h9a3 3 0 0 1 3 3v13H9a3 3 0 0 0-3 3V4z" stroke="#a7b1ff" stroke-width="1.4"/>
+              <path d="M6 4h9a3 3 0 0 1 3 3H9a3 3 0 0 0-3-3z" fill="#7b8cff" opacity=".35"/>
+            </svg>
+          </div>
+          <h3>Fiction</h3>
+          <p>Imaginative narratives to transport you to new worlds.</p>
+          <span class="tag">Curated • 24 books</span>
+        </article>
+
+        <article class="card comics">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+              <path d="M4 5h16v12l-4-2-4 2-4-2-4 2V5z" stroke="#ffb3d8" stroke-width="1.4"/>
+              <path d="M8 8h8M8 11h6" stroke="#ffd0e7" stroke-width="1.4"/>
+            </svg>
+          </div>
+          <h3>Comics</h3>
+          <p>Graphic storytelling with bold art and action.</p>
+          <span class="tag">Trending • 18 books</span>
+        </article>
+
+        <article class="card mystery">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+              <circle cx="10" cy="10" r="6" stroke="#b6f3ff" stroke-width="1.4"/>
+              <path d="M14.5 14.5L20 20" stroke="#00d4ff" stroke-width="1.6"/>
+            </svg>
+          </div>
+          <h3>Mystery</h3>
+          <p>Twists and clues that keep you guessing.</p>
+          <span class="tag">Hot • 12 books</span>
+        </article>
+
+        <article class="card fantasy">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+              <path d="M12 3l2.4 4.9L20 9l-4 3.9.9 5.6L12 16l-4.9 2.5L8 12.9 4 9l5.6-1.1L12 3z" stroke="#d2c3ff" stroke-width="1.4"/>
+            </svg>
+          </div>
+          <h3>Fantasy</h3>
+          <p>Epic quests and magical realms.</p>
+          <span class="tag">Top Rated • 20 books</span>
+        </article>
+
+        <article class="card scifi">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+              <rect x="4" y="10" width="16" height="6" rx="3" stroke="#a3ffe7" stroke-width="1.4"/>
+              <path d="M7 13h10" stroke="#58ffd6" stroke-width="1.6"/>
+              <circle cx="12" cy="6" r="2" fill="#58ffd6"/>
+            </svg>
+          </div>
+          <h3>Science Fiction</h3>
+          <p>Futures imagined with tech and space.</p>
+          <span class="tag">Editor’s Pick • 14 books</span>
+        </article>
+
+        <article class="card nonfiction">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+              <path d="M6 3h12v18H6z" stroke="#ffc98b" stroke-width="1.4"/>
+              <path d="M8 7h8M8 11h8M8 15h6" stroke="#ffdcb3" stroke-width="1.4"/>
+            </svg>
+          </div>
+          <h3>Non‑Fiction</h3>
+          <p>Real stories and practical insights.</p>
+          <span class="tag">Bestsellers • 22 books</span>
+        </article>
+
+        <article class="card children">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+              <path d="M4 18V6a2 2 0 0 1 2-2h6v16H6a2 2 0 0 1-2-2z" stroke="#b5ffc0" stroke-width="1.4"/>
+              <path d="M12 4h4a2 2 0 0 1 2 2v12" stroke="#7cff96" stroke-width="1.4"/>
+            </svg>
+          </div>
+          <h3>Children</h3>
+          <p>Whimsical tales for young readers.</p>
+          <span class="tag">Fun • 10 books</span>
+        </article>
+
+        <!-- Highlight spanning wider columns -->
+        <article class="card large fiction fantasy">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+              <path d="M6 4h9a3 3 0 0 1 3 3v13H9a3 3 0 0 0-3 3V4z" stroke="#9cc1ff" stroke-width="1.4"/>
+              <path d="M6 4h9a3 3 0 0 1 3 3H9a3 3 0 0 0-3-3z" fill="#7b8cff" opacity=".35"/>
+            </svg>
+          </div>
+          <h3>Editor’s Highlight</h3>
+          <p>Hand‑picked sagas and character‑driven fiction that redefine storytelling.</p>
+          <span class="tag">Spotlight</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Famous for Beginners -->
+  <section id="beginners">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2><marquee class="hover-grow" behavior="alternate" direction="right" scrollamount="5">Famous for Beginners</marquee></h2>
+          <p>Great starting points — popular, accessible, and beloved.</p>
+        </div>
+      </div>
+
+      <div class="grid beginners-grid">
+        <article class="card beginner">
+          <div class="badge" aria-hidden="true">Beginner</div>
+          <h3>The Alchemist</h3>
+          <p>A simple yet profound journey about dreams and destiny.</p>
+          <span class="tag">Fiction</span>
+        </article>
+
+        <article class="card beginner">
+          <div class="badge" aria-hidden="true">Beginner</div>
+          <h3>Harry Potter and the Sorcerer’s Stone</h3>
+          <p>Magical entry into fantasy for all ages.</p>
+          <span class="tag">Fantasy</span>
+        </article>
+
+        <article class="card beginner">
+          <div class="badge" aria-hidden="true">Beginner</div>
+          <h3>Atomic Habits</h3>
+          <p>Practical guide to building better habits.</p>
+          <span class="tag">Non‑Fiction</span>
+        </article>
+
+        <article class="card beginner">
+          <div class="badge" aria-hidden="true">Beginner</div>
+          <h3>The Hobbit</h3>
+          <p>Adventure and courage in Middle‑earth.</p>
+          <span class="tag">Fantasy</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2><marquee class="hover-grow" behavior="scroll" direction="left" scrollamount="4">About BookVerse</marquee></h2>
+        <p>Elegant browsing with accessible design and smooth effects.</p>
+      </div>
+      <p class="about-copy">
+        BookVerse helps readers discover books by category and find beginner‑friendly classics and bestsellers. Enjoy a responsive,
+        fast, and visually pleasing experience.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © <span>BookVerse</span>
+  </footer>
+</body>
+</html>
